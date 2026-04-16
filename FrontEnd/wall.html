@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>SocSit</h1>
+        <div class="nav-links">
+            <a href="wall.html">Zeď</a>
+            <a href="#" id="logout-btn">Odhlásit</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="new-post-box">
+            <h2>Nový příspěvek</h2>
+            <form id="new-post-form">
+                <input type="text" id="nadpis" placeholder="Nadpis" required>
+                <textarea id="text" placeholder="Co se děje?" required></textarea>
+                <input type="file" id="obrazek" accept="image/*">
+                <button type="submit">Přidat příspěvek</button>
+            </form>
+        </div>
+
+
+        <div id="posts-container"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

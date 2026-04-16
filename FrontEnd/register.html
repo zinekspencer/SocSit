@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-box">
+            <h1>SocSit</h1>
+            <h2>Registrace</h2>
+            <div id="error-msg" class="error-msg"></div>
+            <div id="success-msg" class="success-msg"></div>
+            <form id="register-form">
+                <input type="text" id="jmeno" placeholder="Jméno" required>
+                <input type="text" id="prijmeni" placeholder="Příjmení" required>
+                <input type="number" id="vek" placeholder="Věk" required>
+                <select id="pohlavi" required>
+                    <option value="">Pohlaví</option>
+                    <option value="muz">Muž</option>
+                    <option value="zena">Žena</option>
+                    <option value="jine">Jiné</option>
+                </select>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="heslo" placeholder="Heslo" required>
+                <input type="file" id="profilovka" accept="image/*">
+                <button type="submit">Registrovat se</button>
+            </form>
+            <p>Máš účet? <a href="index.html">Přihlás se</a></p>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
